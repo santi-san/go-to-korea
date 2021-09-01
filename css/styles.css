@@ -1,6 +1,7 @@
 /********* ESTILOS GENERALES *********/
 @import url('https://fonts.googleapis.com/css2?family=Stylish&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
 *, *::after, *::before {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -15,7 +16,8 @@
     outline: none;
   }
   .h-80 {
-    height: calc( 80% - 86px);
+    height: calc( 100% - 9rem);
+    padding-top: 5rem;
   }
   body {
     font-family: 'Montserrat', sans-serif;
@@ -33,9 +35,59 @@
     
     color: #fff;
 }
+/*************NAV**********************/
+.web-title{
+  font-family: 'Kalam', cursive;
+  background-image: url(../img/bg.png);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent !important;
+  background-position: 79% 92%;
+}
+
+
+
+/**************HERO*********************/
+.ancient-font{
+  font-family: 'Stylish', sans-serif;
+}
+
+.ancient-font h1{
+  font-size: 3.5rem;
+}
+
+/**************1st SECTION*********************/
+.pt-6{
+  padding-top: 6rem;
+}
+#explore{
+  color: white;
+}
+#explore h2{
+  color: #f4c983;
+}
+.play-info{
+
+   height: 100%;
+}
+
+
 section{
     background: #070702;
 }
+/**************2nd SECTION*********************/
+
+#articles{
+  background: #232323;
+}
+#articles h2{
+  color: #f4c983;
+}
+.muted{
+  color: #6c6c6c;
+}
+
 footer{
-    background: red;;
+    background: #262626;
+    color: white;
 }
