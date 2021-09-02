@@ -8,6 +8,9 @@
     margin: 0;
     padding: 0;
   }
+  html{
+    scroll-behavior: smooth;
+  }
   html, body {
     height: 100%;
     margin: 0;
@@ -55,7 +58,86 @@
 .ancient-font h1{
   font-size: 3.5rem;
 }
+.scrolldown {
+  --color: white;
+  --sizeX: 30px;
+  --sizeY: 50px;
+  position: relative;
+  width: 30px;
+  height: 50px;
+  border: calc(30px / 10) solid white;
+  border-radius: 50px;
+  margin: 5rem auto;
 
+}
+
+.scrolldown::before {
+  content: "";
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: white;
+  border-radius: 100%;
+  animation: scrolldown-anim 2s infinite;
+  box-sizing: border-box;
+  box-shadow: 0px -5px 3px 1px #ffffff66;
+}
+
+@keyframes scrolldown-anim {
+  0% {
+    opacity: 0;
+    height: 6px;
+  }
+  40% {
+    opacity: 1;
+    height: 10px;
+  }
+  80% {
+    transform: translate(0, 20px);
+    height: 10px;
+    opacity: 0;
+  }
+  100% {
+    height: 3px;
+    opacity: 0;
+  }
+}
+.chevrons {
+  padding: 6px 0 0 0;
+  margin-left: -3px;
+  margin-top: 48px;
+  width: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.chevrondown {
+  margin-top: -6px;
+  position: relative;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg);
+}
+.chevrondown:nth-child(odd) {
+  animation: pulse 500ms ease infinite alternate;
+}
+.chevrondown:nth-child(even) {
+  animation: pulse 500ms ease infinite alternate 250ms;
+}
+@keyframes pulse {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
 /**************1st SECTION*********************/
 .pt-6{
   padding-top: 6rem;
@@ -76,11 +158,24 @@ section{
 /**************2nd SECTION*********************/
 
 #articles{
-  background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(178, 121, 92, 0.8), rgba(178, 121, 92, 0.4)), url(../img/bg-joseon.jpg)
+  background: linear-gradient(to bottom, rgb(7, 7, 2), rgba(178, 121, 92, 0.8), rgba(178, 121, 92, 0.4)), url(../img/bg-joseon.jpg);
+  background-size: cover;
 }
 #articles h2{
   color: #f4c983;
 }
+.decorator{
+  display: inline-block;
+}
+.decorator::after {
+  content: "";
+  display: block;
+  height: 8px;
+  -webkit-transform: skew(-40deg);
+  transform: skew(-40deg);
+  background: #00000026;
+}
+
 /*a link effect*/
 #articles a{
   position: relative;
@@ -110,7 +205,7 @@ section{
   bottom: 0px;
   background: #f3f3f3;
   transition: transform 200ms cubic-bezier(0.3, 1.5, 0.5, 1);
-      transition-delay: 0s;
+  transition-delay: 0s;
   transition-delay: 240ms;
   z-index: 2;
 }
@@ -140,6 +235,21 @@ section{
   transform: translateX(-1px) rotate(-45deg);
 }
 
+
+.btn-new {
+  padding: 3rem 10rem;
+  border: 2px solid #000;
+  font-weight: bold;
+  background: transparent;
+  transition: all 1s;
+  margin: 0 auto;
+  display: block;
+}
+.btn-new:hover {
+  background: black;
+  color: #a66d53;
+  border-radius: 6px;
+}
 .muted{
   color: #c88667;
 }
