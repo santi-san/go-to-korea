@@ -254,6 +254,34 @@ section{
   color: #c88667;
 }
 
+
+
+/******************3rd SECTIOn*******************************/
+#gallery{
+  background: #221531;
+}
+
+#gallery > div > div{
+  color: #bdaad2
+}
+.card-image{
+  max-height: 600px;
+  max-width: 20.75rem !important;
+  min-width: 18.75rem;
+  border: none;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+.card-image:hover,.card-image:nth-child(2):hover{
+  transform: scale(1.1);
+}
+.card-image:nth-child(2){
+  transform: scale(1.06);
+}
+.img-fluid-new{
+  height: 100%;
+  object-fit: cover;
+}
 footer{
     background: #262626;
     color: white;
