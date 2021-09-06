@@ -28,7 +28,7 @@
 .header-container{
     height: 100% !important;
     
-    background:  linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0) 60%, #070702 100%), url('../img/big2.png');
+    background:  linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0) 60%, #070702 100%), url('../img/big3.png');
     background-position-x: 0%, 0%;
     background-position-y: 0%, 0%;
     background-attachment: scroll, scroll;
@@ -41,13 +41,18 @@
 /*************NAV**********************/
 .web-title{
   font-family: 'Kalam', cursive;
-  background-image: url(../img/bg.png);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent !important;
-  background-position: 79% 92%;
+  font-size: 1.7rem;
+  transition: all .5s;
 }
-
+.web-title:hover {
+  opacity: .6;
+}
+.links{
+  transition: color 1s;
+}
+.links:hover{
+  color: #cecece;
+}
 
 
 /**************HERO*********************/
@@ -282,7 +287,12 @@ section{
   height: 100%;
   object-fit: cover;
 }
+
+/******************4th SECTION*******************************/
+#sponsors{
+  background: #fff;
+}
 footer{
-    background: #262626;
-    color: white;
+    background: #fff;
+    color: #262626;
 }

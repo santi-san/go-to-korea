@@ -15,28 +15,28 @@
 
 <body>
     <header class="header-container">
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark ">
             <div class="container">
-                <a class="navbar-brand py-5 web-title" href="#">GO.TO.<span>KOREA</span></a>
+                <a class="navbar-brand my-5 web-title" href="#">GO TO KOREA</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link links " aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item"> 
+                        <a class="nav-link links" href="#explore">Explore</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#explore">Explore</a>
+                        <a class="nav-link links" href="#articles">Articles</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#articles">Articles</a>
+                        <a class="nav-link links" href="#">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Gallery</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link links" href="#">Contact</a>
                     </li>
                 </div>
             </div>
@@ -117,8 +117,8 @@
             <div class="container py-5">
                 <div class="text-center">
                     <h5 class="muted">go back in time</h5>
-                    <h3>Explore - Learn</h3>
-                    <p>their monuments, scultures, clothes, ideals and doctrines</p>
+                    <h3>Explore and Learn</h3>
+                    <p>monuments, scultures, clothes, ideals and doctrines</p>
                 </div>
 
                 <div class="row justify-content-center pt-5">
@@ -149,15 +149,48 @@
             </div>
             
         </section>
+        <section id="sponsors">
+            <div class="container py-5">
+                <div class="text-center">
+                    <h5 class="muted">thank you</h5>
+                    <h3>To our sponsors and partenrs</h3>
+                </div>
+
+                <div class="d-flex justify-content-between pt-5">
+                    <a href="https://kto.visitkorea.or.kr/kor.kto">
+                        <img class="img-fluid" src="./img/sponsors/visitkorea.png" alt="visitkorea">
+                    </a>
+                    <a href="visitkoreaforme">
+                        <img class="img-fluid" src="./img/sponsors/visitkoreaforme.png" alt="visitkoreaforme">
+                    </a>
+                    <a href="https://vkc.or.kr/en/">
+                        <img class="img-fluid" src="./img/sponsors/vkc.png" alt="vkc">
+                    </a>
+                    <a href="railcruise">
+                        <img class="img-fluid" src="./img/sponsors/railcruise.png" alt="railcruise">
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
     </main>
-    <footer>
-        <div class="container py-4">
+    <footer class="py-5">
+        <div class="container pt-5 pb-4 border-top">
             <div class="row">
                 <div class="col">
                     All rights reserved 2021
                 </div>
-                <div class="col text-center">GOTOKOREA</div>
-                <div class="col text-end">Privacy Disclaimer Contact</div>
+                <div class="col text-center">
+                    <a href="#" class="link-dark">GOTOKOREA</a>
+                </div>
+                <div class="col text-end">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#" class="link-secondary">Privacy</a></li>
+                        <li class="list-inline-item"><a href="#" class="link-secondary">Disclaimer</a></li>
+                        <li class="list-inline-item"><a href="#" class="link-secondary">Contact</a></li>
+                      </ul>
+                </div>
             </div>
         </div>
     </footer>
