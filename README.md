@@ -1,7 +1,7 @@
 # GO TO KOREA Frontend landing page
 
 
-[![Screenshot]()](https://santi-san.github.io/go-to-korea/)
+[![Screenshot](https://github.com/santi-san/go-to-korea/blob/master/DOCS/responsive.png)](https://santi-san.github.io/go-to-korea/)
 
 ## What has been used on this development 
 
